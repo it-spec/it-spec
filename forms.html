@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <title>Формы</title>
+</head>
+<body>
+
+   <h1 id="top" align="center" title="Это заголовок первого уровня">Формы</h1>
+   <p align="center">
+      <a href="https://sites.google.com/view/sharuk-alexey/alexey-a-sharuk" target="_blank">Ссылка на блог в новом окне</a>
+      <a href="page.html">Ссылка на блог</a>
+      <a href="forms.html">Формы</a>
+      <a href="indexcss.html">CSS</a>
+      <a href="formscss.html">ФормыCSS</a></p>
+   <p align="right"><a href="#bottom">Вниз</a></p>
+
+   <form action="#" method="post">
+
+      <p><label for="login">Логин</label></p>
+      <input id="login" type="text" name="login"/>
+      <!--<input id="login" type="text" name="login" value="Login" size=25 maxlength=25/>-->
+      <p><label for="password">Пароль</label></p>
+      <input id="password" type="password" name="password"/>
+
+      <p>Оцените наш сайт</p>
+      <label><input type="radio" name="evaluation" value="excellent"/>Отлично</label><br/>
+      <label><input type="radio" name="evaluation" value="good" checked="checked"/>Хорошо</label><br/>
+      <label><input type="radio" name="evaluation" value="bad"/>Плохо</label><br/>
+
+      <p>Как вы проводите время?</p>
+      <label><input type="checkbox" name="leisure[]" value="reed"/>Читаю книги</label><br/>
+      <label><input type="checkbox" name="leisure[]" value="wotch" checked="checked"/>Смотрю ТВ</label><br/>
+      <label><input type="checkbox" name="leisure[]" value="listen"/>Слушаю музыку</label><br/>
+
+      <label><p>Какой музыкальный стиль Вы предпочитаете?</p>
+         <select name="musicstyle">
+            <option value=1>Поп</option>
+            <option value=2>Рок</option>
+            <option value=3>Диско</option>
+            <option value=4>Рэп</option>
+            <option value=5>Джаз</option>
+            <option value=6>Блюз</option>
+         </select>
+      </label>
+
+      <label><p>Какие музыкальные стили Вы предпочитаете?</p>
+         <select name="musicstyles[]" multiple="multiple" size=6>
+            <option value=1>Поп</option>
+            <option value=2>Рок</option>
+            <option value=3>Диско</option>
+            <option value=4>Рэп</option>
+            <option value=5>Джаз</option>
+            <option value=6>Блюз</option>
+         </select>
+      </label>
+
+      <label><p>Какие музыкальные стили Вы предпочитаете?</p>
+         <textarea name="interests" rows=4 cols=50 maxlength=255>Текст по-умолчанию</textarea>
+      </label><br/>
+
+      <input type="submit" name="submit" value="Отправить"/>
+      <input type="reset" name="reset" value="Очистить"/>
+      <input type="button" name="button" value="Кнопка"/>
+      <button name="button2">Кнопка 2</button>
+      <br/><input type="image" name="imagebutton" src="images/send_btn.png" />
+
+   </form>
+
+<p id="bottom" align="right"><a href="#top">Вверх</a></p>
+
+</body>
+</html>
